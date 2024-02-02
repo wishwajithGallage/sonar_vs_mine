@@ -9,7 +9,7 @@ import numpy as np
 
 # loading the saved models
 
-sonar_model = pickle.load(open('E:\ml projects\Classification Machine Learning Projects 6\SONAR Rock vs Mine Prediction with Python\web\rock_model.sav', 'rb'))
+sonar_model = pickle.load(open('rock_model.sav', 'rb'))
 
 
 
