@@ -228,12 +228,18 @@ if (selected == "Sonar_Rock_vs_Mine_Pediction"):
     if st.button("Sonar_vs_Mine_Test_Result"):
         # Assuming Time, V1 to V28, and Amount are variables with proper numeric values
        #input_data = np.array([[Time,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,V17,V18,V19,V20,V21,V22,V23,V24,V25,V26,V27,V28,Amount]], dtype=float)
-        input_data = [v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24,v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36,v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48,v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59]
-        reshaped_data = np.array(input_data).reshape(1, -1)
-        Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(reshaped_data)
+        #input_data = [v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24,v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36,v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48,v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59]
+        #reshaped_data = np.array(input_data).reshape(1, -1)
+        #Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(reshaped_data)
         # Now use this input_data for prediction
         #Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(input_data)
         #Sonar_Rock_vs_Mine_Pediction = sonar_model.predict([[v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24,v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36,v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48,v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59]])                          
+        input_data = [v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24,v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36,v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48,v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59]
+        reshaped_data = np.array(input_data).reshape(1, -1)
+        Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(reshaped_data)
+
+
+
         
         if (Sonar_Rock_vs_Mine_Pediction[0] == R):
           Sonar_ = "The object is a Rock"
