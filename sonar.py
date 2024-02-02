@@ -38,7 +38,7 @@ if (selected == "Sonar_Rock_vs_Mine_Pediction"):
     col1, col2, col3, col4, col5, col6, col7, col8, col9, col10 = st.columns(10)  
     
     with col1:
-        v0 = st.text_input('0')
+        V0 = st.text_input('0')
         
     with col2:
         V1 = st.text_input('1')
@@ -125,7 +125,7 @@ if (selected == "Sonar_Rock_vs_Mine_Pediction"):
         V28 = st.text_input('28')
         
     with col10:
-        v29 = st.text_input('29')
+        V29 = st.text_input('29')
         
     with col1:
         V30 = st.text_input('30')
@@ -233,7 +233,7 @@ if (selected == "Sonar_Rock_vs_Mine_Pediction"):
         #Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(reshaped_data)
         # Now use this input_data for prediction
         #Sonar_Rock_vs_Mine_Pediction = sonar_model.predict(input_data)
-        Sonar_Rock_vs_Mine_Pediction = sonar_model.predict([[v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24,v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36,v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48,v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59]])                          
+        Sonar_Rock_vs_Mine_Pediction = sonar_model.predict([[V0,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,V17,V18,V19,V20,V21,V22,V23,V24,V25,V26,V27,V28,V29,V30,V31,V32,V33,V34,V35,V36,V37,V38,V39,V40,V41,V42,V43,V44,V45,V46,V47,V48,V49,V50,V51,V52,V53,V54,V55,V56,V57,V58,V59]])                          
         
         if (Sonar_Rock_vs_Mine_Pediction[0] == R):
           Sonar_ = "The object is a Rock"
